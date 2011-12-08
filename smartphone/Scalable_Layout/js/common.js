@@ -7,7 +7,7 @@ var _asiOS3     = (_UA.indexOf('iPhone OS 3') > -1)? true:false;
 
 $(function() {
 	//Android's landscape mode setting.
-	//if(_asAndroid){
+	if(_asAndroid){
 		window.addEventListener("resize, load", setContentsWidth, false);
 		setContentsWidth();
 		
@@ -24,6 +24,6 @@ $(function() {
 
 			return false;
 		}
-	//}
+	}
 });
 })();
